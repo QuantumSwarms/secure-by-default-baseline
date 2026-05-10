@@ -1,0 +1,67 @@
+name: Engagement Inquiry
+description: Request a scoping call or proposal for this offering.
+title: "[INQUIRY] <your-company> — <one-line need>"
+labels: ["inquiry", "triage"]
+assignees: ["QuantumSwarms"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest. Fill this out and we'll respond within **1 business day**. For sensitive details, email **john@epochcoreqcs.com** instead.
+  - type: input
+    id: company
+    attributes:
+      label: Company / Organization
+      placeholder: Acme Plumbing LLC
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location (city, state)
+      placeholder: Huntersville, NC
+  - type: dropdown
+    id: size
+    attributes:
+      label: Team size
+      options:
+        - 1–5
+        - 6–25
+        - 26–100
+        - 100+
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      placeholder: Brief description of the pain point or goal.
+    validations:
+      required: true
+  - type: dropdown
+    id: timeline
+    attributes:
+      label: Desired start
+      options:
+        - This week
+        - Within 30 days
+        - 1–3 months
+        - Exploring / no firm date
+    validations:
+      required: true
+  - type: dropdown
+    id: budget
+    attributes:
+      label: Budget range
+      options:
+        - Under $5k
+        - "$5k–$15k"
+        - "$15k–$50k"
+        - "$50k+"
+        - Need guidance
+  - type: input
+    id: contact
+    attributes:
+      label: Best contact (email or phone)
+    validations:
+      required: true

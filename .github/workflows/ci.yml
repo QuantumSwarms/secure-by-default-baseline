@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint-docs:
+    name: Lint docs & links
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify required files present
+        run: |
+          set -e
+          for f in README.md LICENSE CHANGELOG.md SECURITY.md CONTRIBUTING.md docs/scope.md docs/pricing.md docs/intake-checklist.md docs/deliverables.md SETUP.md; do
+            if [ ! -f "$f" ]; then
+              echo "::error::Missing required file: $f"
+              exit 1
+            fi
+          done
+          echo "All required files present."
+
+      - name: Markdown lint (soft)
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        continue-on-error: true
+        with:
+          globs: "**/*.md"
+
+      - name: Link check (soft)
+        uses: lycheeverse/lychee-action@v2
+        continue-on-error: true
+        with:
+          args: --no-progress --max-concurrency 4 './**/*.md'
+          fail: false

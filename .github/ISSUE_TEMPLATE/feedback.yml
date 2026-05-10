@@ -1,0 +1,15 @@
+name: Feedback / Question
+description: Ask a question or share feedback about this offering.
+title: "[FEEDBACK] "
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: message
+    attributes:
+      label: Your question or feedback
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: How can we follow up? (optional)
