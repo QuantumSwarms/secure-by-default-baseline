@@ -41,6 +41,16 @@ See [`docs/pricing.md`](./docs/pricing.md) for full breakdown, payment terms, an
 
 Full engagement details in [`docs/scope.md`](./docs/scope.md) and [`docs/deliverables.md`](./docs/deliverables.md).
 
+## 📅 Get in touch
+
+| | |
+|---|---|
+| **Book a call** | [calendar.app.google/BOOKING-PLACEHOLDER](https://calendar.app.google/BOOKING-PLACEHOLDER) — 30-min, free, no commitment |
+| **Email** | [john@epochcoreqcs.com](mailto:john@epochcoreqcs.com) |
+| **Open an inquiry** | [Engagement Inquiry form](../../issues/new?template=engagement-inquiry.yml) |
+| **Service area** | Charlotte / Lake Norman (in-person) · US (remote) |
+| **Hours** | Mon–Fri · 9 AM – 2 PM and 4 PM – 7 PM ET |
+
 ## How to engage
 
 1. **Open an [Engagement Inquiry](../../issues/new?template=engagement-inquiry.yml)** — takes 2 minutes.
