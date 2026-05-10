@@ -1,5 +1,7 @@
 # SMB Security Baseline
 
+<p align="center"><img src="./assets/og-image.png" alt="secure-by-default-baseline banner" width="800"></p>
+
 > The 30-day security upgrade every SMB should have done last year. SSO, MFA, backups, incident plan — done right, documented, defensible.
 
 [![CI](https://github.com/QuantumSwarms/secure-by-default-baseline/actions/workflows/ci.yml/badge.svg)](https://github.com/QuantumSwarms/secure-by-default-baseline/actions/workflows/ci.yml)
