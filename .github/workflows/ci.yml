@@ -15,7 +15,7 @@ jobs:
     name: Lint docs & links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
 
       - name: Verify required files present
         run: |
